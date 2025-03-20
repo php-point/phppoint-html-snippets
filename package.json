@@ -1,0 +1,22 @@
+{
+  "name": "phppoint-html-snippets",
+  "displayName": "Html Snippets (Bootstrap 5 & MDBootstrap 5)",
+  "publisher": "phppoint",
+  "description": "a collaction of basic html snippets,bootstrap 5 snippets and MDBootstrap 5 snippets",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.98.0"
+  },
+  "icon":"htmlsnippets_phppoint.png",
+  "categories": [
+    "Snippets"
+  ],
+  "contributes": {
+    "snippets": [
+      {
+        "language": "html",
+        "path": "./snippets/snippets.code-snippets"
+      }
+    ]
+  }
+}

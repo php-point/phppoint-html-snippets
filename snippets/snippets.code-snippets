@@ -1,8 +1,8 @@
 {
     "Basic html layout": {
-        "prefix": "!bhtml:5",
+        "prefix": "$bhtml:5",
         "body": [
-            "<!DOCTYPE html> ",
+            "<$DOCTYPE html> ",
             "<html lang='en'>",
             "<head>",
             "    <meta charset='UTF-8'>",
@@ -12,6 +12,7 @@
             "    <meta name='author' content='Your Name or Company Name'>",
             "    <meta name='robots' content='index, follow'>",
             "    <title>Document</title>",
+            "    <link rel='stylesheet' href='styles.css'>",
             "</head>",
             "<body>",
             "   <h2>Hello World</h2>",
@@ -20,10 +21,301 @@
         ],
         "description": "Basic html layout"
     },
-    "Basic table": {
-        "prefix": "!btable",
+    "class": {
+        "prefix": "class",
         "body": [
-            "<table>",
+            "class=\"${1:}\""
+        ],
+        "description": "class"
+    },
+    "id": {
+        "prefix": "id",
+        "body": [
+            "id=\"${1:}\""
+        ],
+        "description": "id"
+    },
+    "src": {
+        "prefix": "src",
+        "body": [
+            "src=\"${1:}\""
+        ],
+        "description": "src"
+    },
+    "href": {
+        "prefix": "href",
+        "body": [
+            "href=\"${1:}\""
+        ],
+        "description": "href"
+    },
+    "name": {
+        "prefix": "name",
+        "body": [
+            "name=\"${1:}\""
+        ],
+        "description": "name"
+    },
+    "type": {
+        "prefix": "type",
+        "body": [
+            "type=\"${1:}\""
+        ],
+        "description": "type"
+    },
+    "placeholder": {
+        "prefix": "placeholder",
+        "body": [
+            "placeholder=\"${1:}\""
+        ],
+        "description": "placeholder"
+    },
+    "alt": {
+        "prefix": "alt",
+        "body": [
+            "alt=\"${1:}\""
+        ],
+        "description": "alt"
+    },
+    "title": {
+        "prefix": "title",
+        "body": [
+            "title=\"${1:}\""
+        ],
+        "description": "title"
+    },
+    "style": {
+        "prefix": "style",
+        "body": [
+            "style=\"${1:}\""
+        ],
+        "description": "style"
+    },
+    "maxlength": {
+        "prefix": "maxlength",
+        "body": [
+            "maxlength=\"${1:}\""
+        ],
+        "description": "maxlength"
+    },
+    "minlength": {
+        "prefix": "minlength",
+        "body": [
+            "minlength=\"${1:}\""
+        ],
+        "description": "minlength"
+    },
+    "pattern": {
+        "prefix": "pattern",
+        "body": [
+            "pattern=\"${1:}\""
+        ],
+        "description": "pattern"
+    },
+    "onclick": {
+        "prefix": "onclick",
+        "body": [
+            "onclick=\"${1:}\""
+        ],
+        "description": "onclick"
+    },
+    "value": {
+        "prefix": "value",
+        "body": [
+            "value=\"${1:}\""
+        ],
+        "description": "value"
+    },
+    "onsubmit": {
+        "prefix": "onsubmit",
+        "body": [
+            "onsubmit=\"${1:}\""
+        ],
+        "description": "onsubmit"
+    },
+    "onchange": {
+        "prefix": "onchange",
+        "body": [
+            "onchange=\"${1:}\""
+        ],
+        "description": "onchange"
+    },
+    "disabled": {
+        "prefix": "disabled",
+        "body": [
+            "disabled"
+        ],
+        "description": "disabled"
+    },
+    "readonly": {
+        "prefix": "readonly",
+        "body": [
+            "readonly"
+        ],
+        "description": "readonly"
+    },
+    "required": {
+        "prefix": "required",
+        "body": [
+            "required"
+        ],
+        "description": "required"
+    },
+    "checked": {
+        "prefix": "checked",
+        "body": [
+            "checked"
+        ],
+        "description": "checked"
+    },
+    "selected": {
+        "prefix": "selected",
+        "body": [
+            "selected"
+        ],
+        "description": "selected"
+    },
+    "multiple": {
+        "prefix": "multiple",
+        "body": [
+            "multiple"
+        ],
+        "description": "multiple"
+    },
+    "Div tag": {
+        "prefix": "!div",
+        "body": [
+            "<div class=\"${$1}\"  id=\"${$2}\"></div>"
+        ],
+        "description": "div with class or id attributes"
+    },
+    "p tag": {
+        "prefix": "!p",
+        "body": [
+            "<p class=\"${$1}\"  id=\"${$2}\"></p>"
+        ],
+        "description": "p with class or id attributes"
+    },
+    "span tag": {
+        "prefix": "!span",
+        "body": [
+            "<span class=\"${$1}\"  id=\"${$2}\"></span>"
+        ],
+        "description": "span with class or id attributes"
+    },
+    "main tag":{
+        "prefix": "!main",
+        "body": [
+            "<main>",
+            "      ${$1}",
+            "</main>"
+        ],
+        "description": "Main content area"
+    },
+    "aside tag":{
+        "prefix": "!aside",
+        "body": [
+            "<aside>",
+            "      ${$1}",
+            "</aside>"
+        ],
+        "description": "sidebar content area"
+    },
+    "section tag":{
+        "prefix": "!section",
+        "body": [
+            "<section>",
+            "      ${$1}",
+            "</section>"
+        ],
+        "description": "section of content area"
+    },
+    "article tag":{
+        "prefix": "!article",
+        "body": [
+            "<article>",
+            "      ${$1}",
+            "</article>"
+        ],
+        "description": "article content area"
+    },
+    "header tag":{
+        "prefix": "!header",
+        "body": [
+            "<header>",
+            "      ${$1}",
+            "</header>"
+        ],
+        "description": "Page header content area"
+    },
+    "footer tag":{
+        "prefix": "!footer",
+        "body": [
+            "<footer>",
+            "      ${$1}",
+            "</footer>"
+        ],
+        "description": "Page footer content area"
+    },
+    "H1 tag":{
+        "prefix": "<h1",
+        "body": "<h1 class=\"\">${$1}</h1>",
+        "description": "H1 heading tag"
+    },
+    "h2 tag":{
+        "prefix": "<h2",
+        "body": "<h2 class=\"\">${$1}</h2>",
+        "description": "h2 heading tag"
+    },
+    "h3 tag":{
+        "prefix": "<h3",
+        "body": "<h3 class=\"\">${$1}</h3>",
+        "description": "h3 heading tag"
+    },
+    "h4 tag":{
+        "prefix": "<h4",
+        "body": "<h4 class=\"\">${$1}</h4>",
+        "description": "h4 heading tag"
+    },
+    "h5 tag":{
+        "prefix": "<h5",
+        "body": "<h5 class=\"\">${$1}</h5>",
+        "description": "h5 heading tag"
+    },
+    "h6 tag":{
+        "prefix": "<h6",
+        "body": "<h6 class=\"\">${$1}</h6>",
+        "description": "h6 heading tag"
+    },
+    "bold tag":{
+        "prefix": "<b",
+        "body": "<b>${$1}</b>",
+        "description": "bold text"
+    },
+    "strong tag":{
+        "prefix": "<strong",
+        "body": "<strong>${$1}</strong>",
+        "description": "strong text"
+    },
+    "italic tag":{
+        "prefix": "<i",
+        "body": "<i>${$1}</i>",
+        "description": "italic text"
+    },
+    "underline tag":{
+        "prefix": "<u",
+        "body": "<u>${$1}</u>",
+        "description": "underline text"
+    },
+    "mark tag":{
+        "prefix": "<mark",
+        "body": "<mark>${$1}</mark>",
+        "description": "highlight text"
+    },
+    "Basic table": {
+        "prefix": "$btable",
+        "body": [
+            "<table border=1>",
             "    <thead>",
             "        <tr>",
             "            <th>Header 1</th>",
@@ -48,9 +340,9 @@
         "description": "Basic table"
     },
     "Basic ordered list": {
-        "prefix": "!bol",
+        "prefix": "$bol",
         "body": [
-            "<ol>",
+            "<ol type=\"\">",
             "    <li>Item 1</li>",
             "    <li>Item 2</li>",
             "    <li>Item 3</li>",
@@ -59,9 +351,9 @@
         "description": "Basic ordered list"
     },
     "Basic unordered list": {
-        "prefix": "!bul",
+        "prefix": "$bul",
         "body": [
-            "<ul>",
+            "<ul class=\"${$1}\">",
             "    <li>Item 1</li>",
             "    <li>Item 2</li>",
             "    <li>Item 3</li>",
@@ -70,9 +362,9 @@
         "description": "Basic unordered list"
     },
     "Basic form": {
-        "prefix": "!bform",
+        "prefix": "$bform",
         "body": [
-            "<form action=''>",
+            "<form action='' method=\"${$1|POST,GET|}\">",
             "    <label for='name'>Name:</label>",
             "    <input type='text' id='name' name='name'><br><br>",
             "    <label for='email'>Email:</label>",
@@ -85,28 +377,28 @@
         "description": "Basic form"
     },
     "Basic button": {
-        "prefix": "!bbutton",
+        "prefix": "$bbutton",
         "body": [
-            "<button>Click me</button>"
+            "<button class=\"\">Click me</button>"
         ],
         "description": "Basic button"
     },
     "Basic link": {
-        "prefix": "!blink",
+        "prefix": "$blink",
         "body": [
-            "<a href='#'>Click me</a>"
+            "<a href='#' target=\"_blank\">Click me</a>"
         ],
         "description": "Basic link"
     },
     "Basic image": {
-        "prefix": "!bimg",
+        "prefix": "$bimg",
         "body": [
             "<img src='image.jpg' alt='Image'>"
         ],
         "description": "Basic image"
     },
     "Basic video": {
-        "prefix": "!bvideo",
+        "prefix": "$bvideo",
         "body": [
             "<video width='320' height='240' controls>",
             "    <source src='movie.mp4' type='video/mp4'>",
@@ -116,7 +408,7 @@
         "description": "Basic video"
     },
     "Basic audio": {
-        "prefix": "!baudio",
+        "prefix": "$baudio",
         "body": [
             "<audio controls>",
             "    <source src='audio.mp3' type='audio/mpeg'>",
@@ -126,7 +418,7 @@
         "description": "Basic audio"
     },
     "Basic iframe": {
-        "prefix": "!biframe",
+        "prefix": "$biframe",
         "body": [
             "<iframe src='https://www.example.com' width='600' height='400'></iframe>"
         ],
@@ -134,7 +426,7 @@
     },
     // bootstrap 5 css framework
     "Bootstrap 5 starter template": {
-        "prefix": "!bs5",
+        "prefix": "$bs5",
         "body": [
             "<!doctype html>",
             "<html lang='en'>",
@@ -145,7 +437,7 @@
             "    <link href='https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css' rel='stylesheet'>",
             "  </head>",
             "  <body>",
-            "    <!-- Start your project here-->",
+            "    <$-- Start your project here-->",
             "    <div class='container'>",
             "        <div class='d-flex justify-content-center align-items-center' style='height: 100vh'>",
             "            <div class='text-center'>",
@@ -154,7 +446,7 @@
             "            </div>",
             "        </div>",
             "    </div>",
-            "    <!-- End your project here-->",
+            "    <$-- End your project here-->",
             "    <script src='https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js'></script>",
             "  </body>",
             "</html>",
@@ -162,7 +454,7 @@
         "description": "Bootstrap 5 starter template"
     },
     "Bootstrap card": {
-        "prefix": "!bscard",
+        "prefix": "$bscard",
         "body": [
             "<div class='card' style='width: 18rem;'>",
             "    <img src='image.jpg' class='card-img-top' alt='...'>",
@@ -176,7 +468,7 @@
         "description": "Bootstrap card"
     },
     "Bootstrap form": {
-        "prefix": "!bsform",
+        "prefix": "$bsform",
         "body": [
             "<form>",
             "    <div class='mb-3'>",
@@ -198,7 +490,7 @@
         "description": "Bootstrap form"
     },
     "Bootstrap button": {
-        "prefix": "!bsbuttons",
+        "prefix": "$bsbuttons",
         "body": [
             "<button type='button' class='btn btn-primary'>Primary</button>",
             "<button type='button' class='btn btn-secondary'>Secondary</button>",
@@ -213,7 +505,7 @@
         "description": "Bootstrap buttons"
     },
     "Bootstrap link": {
-        "prefix": "!bslink",
+        "prefix": "$bslink",
         "body": [
             "<a href='#' class='btn btn-primary'>Primary</a>",
             "<a href='#' class='btn btn-secondary'>Secondary</a>",
@@ -228,14 +520,14 @@
         "description": "Bootstrap link"
     },
     "Bootstrap image": {
-        "prefix": "!bsimg",
+        "prefix": "$bsimg",
         "body": [
             "<img src='image.jpg' class='img-fluid' alt='Responsive image'>"
         ],
         "description": "Bootstrap image"
     },
     "Bootstrap video": {
-        "prefix": "!bsvideo",
+        "prefix": "$bsvideo",
         "body": [
             "<video class='img-fluid' controls>",
             "    <source src='movie.mp4' type='video/mp4'>",
@@ -245,7 +537,7 @@
         "description": "Bootstrap video"
     },
     "Bootstrap audio": {
-        "prefix": "!bsaudio",
+        "prefix": "$bsaudio",
         "body": [
             "<audio class='img-fluid' controls>",
             "    <source src='audio.mp3' type='audio/mpeg'>",
@@ -255,14 +547,14 @@
         "description": "Bootstrap audio"
     },
     "Bootstrap iframe": {
-        "prefix": "!bsiframe",
+        "prefix": "$bsiframe",
         "body": [
             "<iframe src='https://www.example.com' width='600' height='400'></iframe>"
         ],
         "description": "Bootstrap iframe"
     },
     "Bootstrap carousel": {
-        "prefix": "!bscarousel",
+        "prefix": "$bscarousel",
         "body": [
             "<div id='carouselExampleControls' class='carousel slide' data-bs-ride='carousel'>",
             "    <div class='carousel-inner'>",
@@ -289,7 +581,7 @@
         "description": "Bootstrap carousel"
     },
     "Bootstrap accordion": {
-        "prefix": "!bsaccordion",
+        "prefix": "$bsaccordion",
         "body": [
             "<div class='accordion' id='accordionExample'>",
             "    <div class='accordion-item'>",
@@ -321,37 +613,37 @@
         "description": "Bootstrap accordion"
     },
     "Bootstrap alert": {
-        "prefix": "!bsalert",
+        "prefix": "$bsalert",
         "body": [
             "<div class='alert alert-primary' role='alert'>",
-            "    A simple primary alert—check it out!",
+            "    A simple primary alert—check it out$",
             "</div>",
             "<div class='alert alert-secondary' role='alert'>",
-            "    A simple secondary alert—check it out!",
+            "    A simple secondary alert—check it out$",
             "</div>",
             "<div class='alert alert-success' role='alert'>",
-            "    A simple success alert—check it out!",
+            "    A simple success alert—check it out$",
             "</div>",
             "<div class='alert alert-danger' role='alert'>",
-            "    A simple danger alert—check it out!",
+            "    A simple danger alert—check it out$",
             "</div>",
             "<div class='alert alert-warning' role='alert'>",
-            "    A simple warning alert—check it out!",
+            "    A simple warning alert—check it out$",
             "</div>",
             "<div class='alert alert-info' role='alert'>",
-            "    A simple info alert—check it out!",
+            "    A simple info alert—check it out$",
             "</div>",
             "<div class='alert alert-light' role='alert'>",
-            "    A simple light alert—check it out!",
+            "    A simple light alert—check it out$",
             "</div>",
             "<div class='alert alert-dark' role='alert'>",
-            "    A simple dark alert—check it out!",
+            "    A simple dark alert—check it out$",
             "</div>"
         ],
         "description": "Bootstrap alert"
     },
     "Bootstrap badge": {
-        "prefix": "!bsbadgecollection",
+        "prefix": "$bsbadgecollection",
         "body": [
             "<span class='badge bg-primary'>Primary</span>",
             "<span class='badge bg-secondary'>Secondary</span>",
@@ -365,7 +657,7 @@
         "description": "Bootstrap badge"
     },
     "Bootstrap Navbar": {
-        "prefix": "!bsnavbar",
+        "prefix": "$bsnavbar",
         "body": [
             "<nav class='navbar navbar-expand-lg navbar-light bg-light'>",
             "    <div class='container-fluid'>",
@@ -395,7 +687,7 @@
         "description": "Bootstrap Navbar"
     },
     "Bootstrap dropdown": {
-        "prefix": "!bsdropdown",
+        "prefix": "$bsdropdown",
         "body": [
             "<div class='dropdown'>",
             "    <button class='btn btn-secondary dropdown-toggle' type='button' id='dropdownMenuButton' data-bs-toggle='dropdown' aria-expanded='false'>",
@@ -410,10 +702,9 @@
         ],
         "description": "Bootstrap dropdown"
     },
-    
     // MDB css framework
     "MDB 5 starter template-phppoint": {
-        "prefix": "!mdb5",
+        "prefix": "$mdb5",
         "body": [
             "<!DOCTYPE html>",
             "<html lang='en'>",
@@ -422,17 +713,17 @@
             "    <meta name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no' />",
             "    <meta http-equiv='x-ua-compatible' content='ie=edge' />",
             "    <title>Material Design for Bootstrap</title>",
-            "    <!-- MDB icon -->",
+            "    <$-- MDB icon -->",
             "    <link rel='icon' href='img/mdb-favicon.ico' type='image/x-icon' />",
-            "    <!-- Font Awesome -->",
+            "    <$-- Font Awesome -->",
             "    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css' />",
-            "    <!-- Google Fonts Roboto -->",
+            "    <$-- Google Fonts Roboto -->",
             "    <link rel='stylesheet'",
-            "        href='https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap' /><!-- MDB -->",
+            "        href='https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap' /><$-- MDB -->",
             "    <link href='https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/8.2.0/mdb.min.css' rel='stylesheet' />",
             "</head>",
             "<body>",
-            "    <!-- Start your project here-->",
+            "    <$-- Start your project here-->",
             "    <div class='container'>",
             "        <div class='d-flex justify-content-center align-items-center' style='height: 100vh'>",
             "            <div class='text-center'>",
@@ -441,11 +732,11 @@
             "            </div>",
             "        </div>",
             "    </div>",
-            "    <!-- End your project here-->",
-            "    <!-- MDB -->",
+            "    <$-- End your project here-->",
+            "    <$-- MDB -->",
             "    <script type='text/javascript'",
             "        src='https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/8.2.0/mdb.umd.min.js'></script>",
-            "    <!-- Custom scripts -->",
+            "    <$-- Custom scripts -->",
             "    <script type='text/javascript'></script>",
             "</body>",
             "</html>",
@@ -453,7 +744,7 @@
         "description": "MDB 5 starter template"
     },
     "Basic MDB card": {
-        "prefix": "!MDBcard",
+        "prefix": "$MDBcard",
         "body": [
             "<div class='card' style='width: 18rem;'>",
             "    <img src='image.jpg' class='card-img-top' alt='...'>",
@@ -467,7 +758,7 @@
         "description": "Basic MDB card"
     },
     "Basic MDB form": {
-        "prefix": "!MDBform",
+        "prefix": "$MDBform",
         "body": [
             "<form>",
             "    <div class='form-group'>",
@@ -489,7 +780,7 @@
         "description": "Basic MDB form"
     },
     "Basic MDB button": {
-        "prefix": "!MDBbutton",
+        "prefix": "$MDBbutton",
         "body": [
             "<button type='button' class='btn btn-primary'>Primary</button>",
             "<button type='button' class='btn btn-secondary'>Secondary</button>",
@@ -504,7 +795,7 @@
         "description": "Basic MDB button"
     },
     "Basic MDB link": {
-        "prefix": "!MDBlink",
+        "prefix": "$MDBlink",
         "body": [
             "<a href='#' class='btn btn-primary'>Primary</a>",
             "<a href='#' class='btn btn-secondary'>Secondary</a>",
@@ -519,14 +810,14 @@
         "description": "Basic MDB link"
     },
     "Basic MDB image": {
-        "prefix": "!MDBimg",
+        "prefix": "$MDBimg",
         "body": [
             "<img src='image.jpg' class='img-fluid' alt='Responsive image'>"
         ],
         "description": "Basic MDB image"
     },
     "Basic MDB video": {
-        "prefix": "!MDBvideo",
+        "prefix": "$MDBvideo",
         "body": [
             "<video class='img-fluid' controls>",
             "    <source src='movie.mp4' type='video/mp4'>",
@@ -536,7 +827,7 @@
         "description": "Basic MDB video"
     },
     "Basic MDB audio": {
-        "prefix": "!MDBaudio",
+        "prefix": "$MDBaudio",
         "body": [
             "<audio class='img-fluid' controls>",
             "    <source src='audio.mp3' type='audio/mpeg'>",
@@ -546,14 +837,14 @@
         "description": "Basic MDB audio"
     },
     "Basic MDB iframe": {
-        "prefix": "!MDBiframe",
+        "prefix": "$MDBiframe",
         "body": [
             "<iframe src='https://www.example.com' width='600' height='400'></iframe>"
         ],
         "description": "Basic MDB iframe"
     },
     "Basic MDB carousel": {
-        "prefix": "!MDBcarousel",
+        "prefix": "$MDBcarousel",
         "body": [
             "<div id='carouselExampleControls' class='carousel slide' data-mdb-ride='carousel'>",
             "    <div class='carousel-inner'>",
@@ -580,7 +871,7 @@
         "description": "Basic MDB carousel"
     },
     "Basic MDB accordion": {
-        "prefix": "!MDBaccordion",
+        "prefix": "$MDBaccordion",
         "body": [
             "<div class='accordion' id='accordionExample'>",
             "    <div class='accordion-item'>",
@@ -612,37 +903,37 @@
         "description": "Basic MDB accordion"
     },
     "Basic MDB alert": {
-        "prefix": "!MDBalert",
+        "prefix": "$MDBalert",
         "body": [
             "<div class='alert alert-primary' role='alert'>",
-            "    A simple primary alert—check it out!",
+            "    A simple primary alert—check it out$",
             "</div>",
             "<div class='alert alert-secondary' role='alert'>",
-            "    A simple secondary alert—check it out!",
+            "    A simple secondary alert—check it out$",
             "</div>",
             "<div class='alert alert-success' role='alert'>",
-            "    A simple success alert—check it out!",
+            "    A simple success alert—check it out$",
             "</div>",
             "<div class='alert alert-danger' role='alert'>",
-            "    A simple danger alert—check it out!",
+            "    A simple danger alert—check it out$",
             "</div>",
             "<div class='alert alert-warning' role='alert'>",
-            "    A simple warning alert—check it out!",
+            "    A simple warning alert—check it out$",
             "</div>",
             "<div class='alert alert-info' role='alert'>",
-            "    A simple info alert—check it out!",
+            "    A simple info alert—check it out$",
             "</div>",
             "<div class='alert alert-light' role='alert'>",
-            "    A simple light alert—check it out!",
+            "    A simple light alert—check it out$",
             "</div>",
             "<div class='alert alert-dark' role='alert'>",
-            "    A simple dark alert—check it out!",
+            "    A simple dark alert—check it out$",
             "</div>"
         ],
         "description": "Basic MDB alert"
     },
     "Basic MDB badge": {
-        "prefix": "!MDBbadgecollection",
+        "prefix": "$MDBbadgecollection",
         "body": [
             "<span class='badge bg-primary'>Primary</span>",
             "<span class='badge bg-secondary'>Secondary</span>",
@@ -656,7 +947,7 @@
         "description": "Basic MDB badge"
     },
     "Basic MDB Navbar": {
-        "prefix": "!MDBnavbar",
+        "prefix": "$MDBnavbar",
         "body": [
             "<nav class='navbar navbar-expand-lg navbar-light bg-light'>",
             "    <div class='container-fluid'>",
@@ -686,7 +977,7 @@
         "description": "Basic MDB Navbar"
     },
     "Basic MDB dropdown": {
-        "prefix": "!MDBdropdown",
+        "prefix": "$MDBdropdown",
         "body": [
             "<div class='dropdown'>",
             "    <button class='btn btn-secondary dropdown-toggle' type='button' id='dropdownMenuButton' data-mdb-toggle='dropdown' aria-expanded='false'>",
@@ -702,7 +993,7 @@
         "description": "Basic MDB dropdown"
     },
     "Basic MDB modal": {
-        "prefix": "!MDBmodal",
+        "prefix": "$MDBmodal",
         "body": [
             "<button type='button' class='btn btn-primary' data-mdb-toggle='modal' data-mdb-target='#exampleModal'>",
             "    Launch demo modal",
@@ -728,7 +1019,7 @@
         "description": "Basic MDB modal"
     },
     "Basic MDB toast": {
-        "prefix": "!MDBtoast",
+        "prefix": "$MDBtoast",
         "body": [
             "<div class='toast' role='alert' aria-live='assertive' aria-atomic='true'>",
             "    <div class='toast-header'>",
@@ -738,14 +1029,14 @@
             "        <button type='button' class='btn-close' data-mdb-dismiss='toast' aria-label='Close'></button>",
             "    </div>",
             "    <div class='toast-body'>",
-            "        Hello, world! This is a toast message.",
+            "        Hello, world$ This is a toast message.",
             "    </div>",
             "</div>"
         ],
         "description": "Basic MDB toast"
     },
     "Basic MDB spinner": {
-        "prefix": "!MDBspinner",
+        "prefix": "$MDBspinner",
         "body": [
             "<div class='spinner-border' role='status'>",
             "    <span class='visually-hidden'>Loading...</span>",
@@ -778,7 +1069,7 @@
         "description": "Basic MDB spinner"
     },
     "Basic MDB progress": {
-        "prefix": "!MDBprogress",
+        "prefix": "$MDBprogress",
         "body": [
             "<div class='progress'>",
             "    <div class='progress-bar' role='progressbar' style='width: 25%' aria-valuenow='25' aria-valuemin='0' aria-valuemax='100'></div>",
@@ -799,7 +1090,7 @@
         "description": "Basic MDB progress"
     },
     "Basic MDB pagination": {
-        "prefix": "!MDBpagination",
+        "prefix": "$MDBpagination",
         "body": [
             "<nav>",
             "    <ul class='pagination'>",

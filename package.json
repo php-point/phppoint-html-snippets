@@ -1,9 +1,13 @@
 {
   "name": "phppoint-html-snippets",
-  "displayName": "Html Snippets (Bootstrap 5 & MDBootstrap 5)",
+  "displayName": "New Html Snippets (Bootstrap 5 & MDBootstrap 5)",
   "publisher": "phppoint",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/php-point/phppoint-html-snippets.git"
+  },
   "description": "a collaction of basic html snippets,bootstrap 5 snippets and MDBootstrap 5 snippets",
-  "version": "0.0.1",
+  "version": "0.0.4",
   "engines": {
     "vscode": "^1.98.0"
   },

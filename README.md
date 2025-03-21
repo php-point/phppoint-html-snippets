@@ -13,7 +13,7 @@ This is a VS Code extension that helps developers with basic html code fast writ
 - fix bugs
 
 ## Screenshots
-![Screenshot](screenshots/1.png)
+![Screenshot](screenshots/2.png)
 
 ## How to Use
 - Open VS Code.

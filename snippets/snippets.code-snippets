@@ -3,16 +3,16 @@
         "prefix": "$bhtml:5",
         "body": [
             "<$DOCTYPE html> ",
-            "<html lang='en'>",
+            "<html lang=\"en\">",
             "<head>",
-            "    <meta charset='UTF-8'>",
-            "    <meta name='viewport' content='width=device-width, initial-scale=1.0'>",
-            "    <meta name='description' content='A brief description of your webpage for SEO purposes.'>",
-            "    <meta name='keywords' content='keyword1, keyword2, keyword3'>",
-            "    <meta name='author' content='Your Name or Company Name'>",
-            "    <meta name='robots' content='index, follow'>",
+            "    <meta charset=\"UTF-8\">",
+            "    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">",
+            "    <meta name=\"description\" content=\"A brief description of your webpage for SEO purposes.\">",
+            "    <meta name=\"keywords\" content=\"keyword1, keyword2, keyword3\">",
+            "    <meta name=\"author\" content=\"Your Name or Company Name\">",
+            "    <meta name=\"robots\" content=\"index, follow\">",
             "    <title>Document</title>",
-            "    <link rel='stylesheet' href='styles.css'>",
+            "    <link rel=\"stylesheet\" href=\"styles.css\">",
             "</head>",
             "<body>",
             "   <h2>Hello World</h2>",
@@ -183,133 +183,163 @@
         "description": "multiple"
     },
     "Div tag": {
-        "prefix": "!div",
+        "prefix": "div",
         "body": [
-            "<div class=\"${$1}\"  id=\"${$2}\"></div>"
+            "<div class=\"${1}\"  id=\"${2}\"></div>"
         ],
         "description": "div with class or id attributes"
     },
     "p tag": {
-        "prefix": "!p",
+        "prefix": "p",
         "body": [
-            "<p class=\"${$1}\"  id=\"${$2}\"></p>"
+            "<p class=\"${1}\"  id=\"${2}\"></p>"
         ],
         "description": "p with class or id attributes"
     },
     "span tag": {
-        "prefix": "!span",
+        "prefix": "span",
         "body": [
-            "<span class=\"${$1}\"  id=\"${$2}\"></span>"
+            "<span class=\"${1}\"  id=\"${2}\"></span>"
         ],
         "description": "span with class or id attributes"
     },
     "main tag":{
-        "prefix": "!main",
+        "prefix": "main",
         "body": [
             "<main>",
-            "      ${$1}",
+            "      ${1}",
             "</main>"
         ],
         "description": "Main content area"
     },
     "aside tag":{
-        "prefix": "!aside",
+        "prefix": "aside",
         "body": [
             "<aside>",
-            "      ${$1}",
+            "      ${1}",
             "</aside>"
         ],
         "description": "sidebar content area"
     },
     "section tag":{
-        "prefix": "!section",
+        "prefix": "section",
         "body": [
             "<section>",
-            "      ${$1}",
+            "      ${1}",
             "</section>"
         ],
         "description": "section of content area"
     },
     "article tag":{
-        "prefix": "!article",
+        "prefix": "article",
         "body": [
             "<article>",
-            "      ${$1}",
+            "      ${1}",
             "</article>"
         ],
         "description": "article content area"
     },
     "header tag":{
-        "prefix": "!header",
+        "prefix": "header",
         "body": [
             "<header>",
-            "      ${$1}",
+            "      ${1}",
             "</header>"
         ],
         "description": "Page header content area"
     },
     "footer tag":{
-        "prefix": "!footer",
+        "prefix": "footer",
         "body": [
             "<footer>",
-            "      ${$1}",
+            "      ${1}",
             "</footer>"
         ],
         "description": "Page footer content area"
     },
-    "H1 tag":{
+    "h1 tag":{
         "prefix": "<h1",
-        "body": "<h1 class=\"\">${$1}</h1>",
-        "description": "H1 heading tag"
+        "body": "<h1 class=\"\">${1}</h1>",
+        "description": "H1 heading tag phppoint"
     },
-    "h2 tag":{
+    "h2 tag phppoint":{
         "prefix": "<h2",
-        "body": "<h2 class=\"\">${$1}</h2>",
-        "description": "h2 heading tag"
+        "body": "<h2 class=\"\">${1}</h2>",
+        "description": "h2 heading tag phppoint"
     },
-    "h3 tag":{
+    "h3 tag phppoint":{
         "prefix": "<h3",
-        "body": "<h3 class=\"\">${$1}</h3>",
-        "description": "h3 heading tag"
+        "body": "<h3 class=\"\">${1}</h3>",
+        "description": "h3 heading tag phppoint"
     },
-    "h4 tag":{
+    "h4 tag phppoint":{
         "prefix": "<h4",
-        "body": "<h4 class=\"\">${$1}</h4>",
-        "description": "h4 heading tag"
+        "body": "<h4 class=\"\">${1}</h4>",
+        "description": "h4 heading tag phppoint"
     },
-    "h5 tag":{
+    "h5 tag phppoint":{
         "prefix": "<h5",
-        "body": "<h5 class=\"\">${$1}</h5>",
-        "description": "h5 heading tag"
+        "body": "<h5 class=\"\">${1}</h5>",
+        "description": "h5 heading tag phppoint"
     },
-    "h6 tag":{
+    "h6 tag phppoint":{
         "prefix": "<h6",
-        "body": "<h6 class=\"\">${$1}</h6>",
-        "description": "h6 heading tag"
+        "body": "<h6 class=\"\">${1}</h6>",
+        "description": "h6 heading tag phppoint"
+    },
+    "h1 tag phppoint ":{
+        "prefix": "h1",
+        "body": "<h1 class=\"\">${1}</h1>",
+        "description": "H1 heading tag phppoint"
+    },
+    "h2 tag phppoint ":{
+        "prefix": "h2",
+        "body": "<h2 class=\"\">${1}</h2>",
+        "description": "h2 heading tag phppoint"
+    },
+    "h3 tag phppoint ":{
+        "prefix": "h3",
+        "body": "<h3 class=\"\">${1}</h3>",
+        "description": "h3 heading tag phppoint"
+    },
+    "h4 tag phppoint ":{
+        "prefix": "h4",
+        "body": "<h4 class=\"\">${1}</h4>",
+        "description": "h4 heading tag phppoint"
+    },
+    "h5 tag phppoint ":{
+        "prefix": "h5",
+        "body": "<h5 class=\"\">${1}</h5>",
+        "description": "h5 heading tag phppoint"
+    },
+    "h6 tag phppoint ":{
+        "prefix": "h6",
+        "body": "<h6 class=\"\">${1}</h6>",
+        "description": "h6 heading tag phppoint"
     },
     "bold tag":{
         "prefix": "<b",
-        "body": "<b>${$1}</b>",
+        "body": "<b>${1}</b>",
         "description": "bold text"
     },
     "strong tag":{
         "prefix": "<strong",
-        "body": "<strong>${$1}</strong>",
+        "body": "<strong>${1}</strong>",
         "description": "strong text"
     },
     "italic tag":{
         "prefix": "<i",
-        "body": "<i>${$1}</i>",
+        "body": "<i>${1}</i>",
         "description": "italic text"
     },
     "underline tag":{
         "prefix": "<u",
-        "body": "<u>${$1}</u>",
+        "body": "<u>${1}</u>",
         "description": "underline text"
     },
     "mark tag":{
         "prefix": "<mark",
-        "body": "<mark>${$1}</mark>",
+        "body": "<mark>${1}</mark>",
         "description": "highlight text"
     },
     "Basic table": {
@@ -353,7 +383,7 @@
     "Basic unordered list": {
         "prefix": "$bul",
         "body": [
-            "<ul class=\"${$1}\">",
+            "<ul class=\"${1}\">",
             "    <li>Item 1</li>",
             "    <li>Item 2</li>",
             "    <li>Item 3</li>",
@@ -364,14 +394,14 @@
     "Basic form": {
         "prefix": "$bform",
         "body": [
-            "<form action='' method=\"${$1|POST,GET|}\">",
-            "    <label for='name'>Name:</label>",
-            "    <input type='text' id='name' name='name'><br><br>",
-            "    <label for='email'>Email:</label>",
-            "    <input type='email' id='email' name='email'><br><br>",
-            "    <label for='password'>Password:</label>",
-            "    <input type='password' id='password' name='password'><br><br>",
-            "    <input type='submit' value='Submit'>",
+            "<form action=\"\" method=\"${1|GET,POST|}\">",
+            "    <label for=\"name\">Name:</label>",
+            "    <input type=\"text\" id=\"name\" name=\"name\"><br><br>",
+            "    <label for=\"email\">Email:</label>",
+            "    <input type=\"email\" id=\"email\" name=\"email\"><br><br>",
+            "    <label for=\"password\">Password:</label>",
+            "    <input type=\"password\" id=\"password\" name=\"password\"><br><br>",
+            "    <input type=\"submit\" value=\"Submit\">",
             "</form>"
         ],
         "description": "Basic form"
@@ -386,22 +416,22 @@
     "Basic link": {
         "prefix": "$blink",
         "body": [
-            "<a href='#' target=\"_blank\">Click me</a>"
+            "<a href=\"\" target=\"_blank\">Click me</a>"
         ],
         "description": "Basic link"
     },
     "Basic image": {
         "prefix": "$bimg",
         "body": [
-            "<img src='image.jpg' alt='Image'>"
+            "<img src=\"image.jpg\" alt=\"Image\">"
         ],
         "description": "Basic image"
     },
     "Basic video": {
         "prefix": "$bvideo",
         "body": [
-            "<video width='320' height='240' controls>",
-            "    <source src='movie.mp4' type='video/mp4'>",
+            "<video width=\"320\" height=\"240\" controls>",
+            "    <source src=\"movie.mp4\" type=\"video/mp4\">",
             "    Your browser does not support the video tag.",
             "</video>"
         ],
@@ -411,7 +441,7 @@
         "prefix": "$baudio",
         "body": [
             "<audio controls>",
-            "    <source src='audio.mp3' type='audio/mpeg'>",
+            "    <source src=\"audio.mp3\" type=\"audio/mpeg\">",
             "    Your browser does not support the audio tag.",
             "</audio>"
         ],
@@ -420,7 +450,7 @@
     "Basic iframe": {
         "prefix": "$biframe",
         "body": [
-            "<iframe src='https://www.example.com' width='600' height='400'></iframe>"
+            "<iframe src=\"https://www.example.com\" width=\"600\" height=\"400\"></iframe>"
         ],
         "description": "Basic iframe"
     },
@@ -429,25 +459,25 @@
         "prefix": "$bs5",
         "body": [
             "<!doctype html>",
-            "<html lang='en'>",
+            "<html lang=\"en\">",
             "  <head>",
-            "    <meta charset='utf-8'>",
-            "    <meta name='viewport' content='width=device-width, initial-scale=1'>",
+            "    <meta charset=\"utf-8\">",
+            "    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">",
             "    <title>Bootstrap demo</title>",
-            "    <link href='https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css' rel='stylesheet'>",
+            "    <link href=\"https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css\" rel=\"stylesheet\">",
             "  </head>",
             "  <body>",
             "    <$-- Start your project here-->",
-            "    <div class='container'>",
-            "        <div class='d-flex justify-content-center align-items-center' style='height: 100vh'>",
-            "            <div class='text-center'>",
-            "                <img class='mb-4' src='https://phppoint.in/assets/images/phppoint.png' style='width: 250px;' />",
-            "                <h5 class='mb-3'>Thank you for using our product. We're glad you're with us.</h5>",
+            "    <div class=\"container\">",
+            "        <div class=\"d-flex justify-content-center align-items-center\" style=\"height: 100vh\">",
+            "            <div class=\"text-center\">",
+            "                <img class=\"mb-4\" src=\"https://phppoint.in/assets/images/phppoint.png\" style=\"width: 250px;\" />",
+            "                <h5 class=\"mb-3\">Thank you for using our product. We\"re glad you\"re with us.</h5>",
             "            </div>",
             "        </div>",
             "    </div>",
             "    <$-- End your project here-->",
-            "    <script src='https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js'></script>",
+            "    <script src=\"https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js\"></script>",
             "  </body>",
             "</html>",
         ],
@@ -456,12 +486,12 @@
     "Bootstrap card": {
         "prefix": "$bscard",
         "body": [
-            "<div class='card' style='width: 18rem;'>",
-            "    <img src='image.jpg' class='card-img-top' alt='...'>",
-            "    <div class='card-body'>",
-            "        <h5 class='card-title'>Card title</h5>",
-            "        <p class='card-text'>Some quick example text to build on the card title and make up the bulk of the card's content.</p>",
-            "        <a href='#' class='btn btn-primary'>Go somewhere</a>",
+            "<div class=\"card\" style=\"width: 18rem;\">",
+            "    <img src=\"image.jpg\" class=\"card-img-top\" alt=\"...\">",
+            "    <div class=\"card-body\">",
+            "        <h5 class=\"card-title\">Card title</h5>",
+            "        <p class=\"card-text\">Some quick example text to build on the card title and make up the bulk of the card\"s content.</p>",
+            "        <a href=\"\" class=\"btn btn-primary\">Go somewhere</a>",
             "    </div>",
             "</div>"
         ],
@@ -471,20 +501,20 @@
         "prefix": "$bsform",
         "body": [
             "<form>",
-            "    <div class='mb-3'>",
-            "        <label for='exampleInputEmail1' class='form-label'>Email address</label>",
-            "        <input type='email' class='form-control' id='exampleInputEmail1' aria-describedby='emailHelp'>",
-            "        <div id='emailHelp' class='form-text'>We'll never share your email with anyone else.</div>",
+            "    <div class=\"mb-3\">",
+            "        <label for=\"exampleInputEmail1\" class=\"form-label\">Email address</label>",
+            "        <input type=\"email\" class=\"form-control\" id=\"exampleInputEmail1\" aria-describedby=\"emailHelp\">",
+            "        <div id=\"emailHelp\" class=\"form-text\">We\"ll never share your email with anyone else.</div>",
             "    </div>",
-            "    <div class='mb-3'>",
-            "        <label for='exampleInputPassword1' class='form-label'>Password</label>",
-            "        <input type='password' class='form-control' id='exampleInputPassword1'>",
+            "    <div class=\"mb-3\">",
+            "        <label for=\"exampleInputPassword1\" class=\"form-label\">Password</label>",
+            "        <input type=\"password\" class=\"form-control\" id=\"exampleInputPassword1\">",
             "    </div>",
-            "    <div class='mb-3 form-check'>",
-            "        <input type='checkbox' class='form-check-input' id='exampleCheck1'>",
-            "        <label class='form-check-label' for='exampleCheck1'>Check me out</label>",
+            "    <div class=\"mb-3 form-check\">",
+            "        <input type=\"checkbox\" class=\"form-check-input\" id=\"exampleCheck1\">",
+            "        <label class=\"form-check-label\" for=\"exampleCheck1\">Check me out</label>",
             "    </div>",
-            "    <button type='submit' class='btn btn-primary'>Submit</button>",
+            "    <button type=\"submit\" class=\"btn btn-primary\">Submit</button>",
             "</form>"
         ],
         "description": "Bootstrap form"
@@ -492,45 +522,45 @@
     "Bootstrap button": {
         "prefix": "$bsbuttons",
         "body": [
-            "<button type='button' class='btn btn-primary'>Primary</button>",
-            "<button type='button' class='btn btn-secondary'>Secondary</button>",
-            "<button type='button' class='btn btn-success'>Success</button>",
-            "<button type='button' class='btn btn-danger'>Danger</button>",
-            "<button type='button' class='btn btn-warning'>Warning</button>",
-            "<button type='button' class='btn btn-info'>Info</button>",
-            "<button type='button' class='btn btn-light'>Light</button>",
-            "<button type='button' class='btn btn-dark'>Dark</button>",
-            "<button type='button' class='btn btn-link'>Link</button>"
+            "<button type=\"button\" class=\"btn btn-primary\">Primary</button>",
+            "<button type=\"button\" class=\"btn btn-secondary\">Secondary</button>",
+            "<button type=\"button\" class=\"btn btn-success\">Success</button>",
+            "<button type=\"button\" class=\"btn btn-danger\">Danger</button>",
+            "<button type=\"button\" class=\"btn btn-warning\">Warning</button>",
+            "<button type=\"button\" class=\"btn btn-info\">Info</button>",
+            "<button type=\"button\" class=\"btn btn-light\">Light</button>",
+            "<button type=\"button\" class=\"btn btn-dark\">Dark</button>",
+            "<button type=\"button\" class=\"btn btn-link\">Link</button>"
         ],
         "description": "Bootstrap buttons"
     },
     "Bootstrap link": {
         "prefix": "$bslink",
         "body": [
-            "<a href='#' class='btn btn-primary'>Primary</a>",
-            "<a href='#' class='btn btn-secondary'>Secondary</a>",
-            "<a href='#' class='btn btn-success'>Success</a>",
-            "<a href='#' class='btn btn-danger'>Danger</a>",
-            "<a href='#' class='btn btn-warning'>Warning</a>",
-            "<a href='#' class='btn btn-info'>Info</a>",
-            "<a href='#' class='btn btn-light'>Light</a>",
-            "<a href='#' class='btn btn-dark'>Dark</a>",
-            "<a href='#' class='btn btn-link'>Link</a>"
+            "<a href=\"\" class=\"btn btn-primary\">Primary</a>",
+            "<a href=\"\" class=\"btn btn-secondary\">Secondary</a>",
+            "<a href=\"\" class=\"btn btn-success\">Success</a>",
+            "<a href=\"\" class=\"btn btn-danger\">Danger</a>",
+            "<a href=\"\" class=\"btn btn-warning\">Warning</a>",
+            "<a href=\"\" class=\"btn btn-info\">Info</a>",
+            "<a href=\"\" class=\"btn btn-light\">Light</a>",
+            "<a href=\"\" class=\"btn btn-dark\">Dark</a>",
+            "<a href=\"\" class=\"btn btn-link\">Link</a>"
         ],
         "description": "Bootstrap link"
     },
     "Bootstrap image": {
         "prefix": "$bsimg",
         "body": [
-            "<img src='image.jpg' class='img-fluid' alt='Responsive image'>"
+            "<img src=\"image.jpg\" class=\"img-fluid\" alt=\"Responsive image\">"
         ],
         "description": "Bootstrap image"
     },
     "Bootstrap video": {
         "prefix": "$bsvideo",
         "body": [
-            "<video class='img-fluid' controls>",
-            "    <source src='movie.mp4' type='video/mp4'>",
+            "<video class=\"img-fluid\" controls>",
+            "    <source src=\"movie.mp4\" type=\"video/mp4\">",
             "    Your browser does not support the video tag.",
             "</video>"
         ],
@@ -539,8 +569,8 @@
     "Bootstrap audio": {
         "prefix": "$bsaudio",
         "body": [
-            "<audio class='img-fluid' controls>",
-            "    <source src='audio.mp3' type='audio/mpeg'>",
+            "<audio class=\"img-fluid\" controls>",
+            "    <source src=\"audio.mp3\" type=\"audio/mpeg\">",
             "    Your browser does not support the audio tag.",
             "</audio>"
         ],
@@ -549,32 +579,32 @@
     "Bootstrap iframe": {
         "prefix": "$bsiframe",
         "body": [
-            "<iframe src='https://www.example.com' width='600' height='400'></iframe>"
+            "<iframe src=\"https://www.example.com\" width=\"600\" height=\"400\"></iframe>"
         ],
         "description": "Bootstrap iframe"
     },
     "Bootstrap carousel": {
         "prefix": "$bscarousel",
         "body": [
-            "<div id='carouselExampleControls' class='carousel slide' data-bs-ride='carousel'>",
-            "    <div class='carousel-inner'>",
-            "        <div class='carousel-item active'>",
-            "            <img src='image1.jpg' class='d-block w-100' alt='...'>",
+            "<div id=\"carouselExampleControls\" class=\"carousel slide\" data-bs-ride=\"carousel\">",
+            "    <div class=\"carousel-inner\">",
+            "        <div class=\"carousel-item active\">",
+            "            <img src=\"image1.jpg\" class=\"d-block w-100\" alt=\"...\">",
             "        </div>",
-            "        <div class='carousel-item'>",
-            "            <img src='image2.jpg' class='d-block w-100' alt='...'>",
+            "        <div class=\"carousel-item\">",
+            "            <img src=\"image2.jpg\" class=\"d-block w-100\" alt=\"...\">",
             "        </div>",
-            "        <div class='carousel-item'>",
-            "            <img src='image3.jpg' class='d-block w-100' alt='...'>",
+            "        <div class=\"carousel-item\">",
+            "            <img src=\"image3.jpg\" class=\"d-block w-100\" alt=\"...\">",
             "        </div>",
             "    </div>",
-            "    <button class='carousel-control-prev' type='button' data-bs-target='#carouselExampleControls' data-bs-slide='prev'>",
-            "        <span class='carousel-control-prev-icon' aria-hidden='true'></span>",
-            "        <span class='visually-hidden'>Previous</span>",
+            "    <button class=\"carousel-control-prev\" type=\"button\" data-bs-target=\"#carouselExampleControls\" data-bs-slide=\"prev\">",
+            "        <span class=\"carousel-control-prev-icon\" aria-hidden=\"true\"></span>",
+            "        <span class=\"visually-hidden\">Previous</span>",
             "    </button>",
-            "    <button class='carousel-control-next' type='button' data-bs-target='#carouselExampleControls' data-bs-slide='next'>",
-            "        <span class='carousel-control-next-icon' aria-hidden='true'></span>",
-            "        <span class='visually-hidden'>Next</span>",
+            "    <button class=\"carousel-control-next\" type=\"button\" data-bs-target=\"#carouselExampleControls\" data-bs-slide=\"next\">",
+            "        <span class=\"carousel-control-next-icon\" aria-hidden=\"true\"></span>",
+            "        <span class=\"visually-hidden\">Next</span>",
             "    </button>",
             "</div>"
         ],
@@ -583,28 +613,28 @@
     "Bootstrap accordion": {
         "prefix": "$bsaccordion",
         "body": [
-            "<div class='accordion' id='accordionExample'>",
-            "    <div class='accordion-item'>",
-            "        <h2 class='accordion-header' id='headingOne'>",
-            "            <button class='accordion-button' type='button' data-bs-toggle='collapse' data-bs-target='#collapseOne' aria-expanded='true' aria-controls='collapseOne'>",
+            "<div class=\"accordion\" id=\"accordionExample\">",
+            "    <div class=\"accordion-item\">",
+            "        <h2 class=\"accordion-header\" id=\"headingOne\">",
+            "            <button class=\"accordion-button\" type=\"button\" data-bs-toggle=\"collapse\" data-bs-target=\"#collapseOne\" aria-expanded=\"true\" aria-controls=\"collapseOne\">",
             "                Accordion Item #1",
             "            </button>",
             "        </h2>",
-            "        <div id='collapseOne' class='accordion-collapse collapse show' aria-labelledby='headingOne' data-bs-parent='#accordionExample'>",
-            "            <div class='accordion-body'>",
-            "                <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element.",
+            "        <div id=\"collapseOne\" class=\"accordion-collapse collapse show\" aria-labelledby=\"headingOne\" data-bs-parent=\"#accordionExample\">",
+            "            <div class=\"accordion-body\">",
+            "                <strong>This is the first item\"s accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element.",
             "            </div>",
             "        </div>",
             "    </div>",
-            "    <div class='accordion-item'>",
-            "        <h2 class='accordion-header' id='headingTwo'>",
-            "            <button class='accordion-button collapsed' type='button' data-bs-toggle='collapse' data-bs-target='#collapseTwo' aria-expanded='false' aria-controls='collapseTwo'>",
+            "    <div class=\"accordion-item\">",
+            "        <h2 class=\"accordion-header\" id=\"headingTwo\">",
+            "            <button class=\"accordion-button collapsed\" type=\"button\" data-bs-toggle=\"collapse\" data-bs-target=\"#collapseTwo\" aria-expanded=\"false\" aria-controls=\"collapseTwo\">",
             "                Accordion Item #2",
             "            </button>",
             "        </h2>",
-            "        <div id='collapseTwo' class='accordion-collapse collapse' aria-labelledby='headingTwo' data-bs-parent='#accordionExample'>",
-            "            <div class='accordion-body'>",
-            "                <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element.",
+            "        <div id=\"collapseTwo\" class=\"accordion-collapse collapse\" aria-labelledby=\"headingTwo\" data-bs-parent=\"#accordionExample\">",
+            "            <div class=\"accordion-body\">",
+            "                <strong>This is the second item\"s accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element.",
             "            </div>",
             "        </div>",
             "    </div>",
@@ -615,28 +645,28 @@
     "Bootstrap alert": {
         "prefix": "$bsalert",
         "body": [
-            "<div class='alert alert-primary' role='alert'>",
+            "<div class=\"alert alert-primary\" role=\"alert\">",
             "    A simple primary alert—check it out$",
             "</div>",
-            "<div class='alert alert-secondary' role='alert'>",
+            "<div class=\"alert alert-secondary\" role=\"alert\">",
             "    A simple secondary alert—check it out$",
             "</div>",
-            "<div class='alert alert-success' role='alert'>",
+            "<div class=\"alert alert-success\" role=\"alert\">",
             "    A simple success alert—check it out$",
             "</div>",
-            "<div class='alert alert-danger' role='alert'>",
+            "<div class=\"alert alert-danger\" role=\"alert\">",
             "    A simple danger alert—check it out$",
             "</div>",
-            "<div class='alert alert-warning' role='alert'>",
+            "<div class=\"alert alert-warning\" role=\"alert\">",
             "    A simple warning alert—check it out$",
             "</div>",
-            "<div class='alert alert-info' role='alert'>",
+            "<div class=\"alert alert-info\" role=\"alert\">",
             "    A simple info alert—check it out$",
             "</div>",
-            "<div class='alert alert-light' role='alert'>",
+            "<div class=\"alert alert-light\" role=\"alert\">",
             "    A simple light alert—check it out$",
             "</div>",
-            "<div class='alert alert-dark' role='alert'>",
+            "<div class=\"alert alert-dark\" role=\"alert\">",
             "    A simple dark alert—check it out$",
             "</div>"
         ],
@@ -645,39 +675,39 @@
     "Bootstrap badge": {
         "prefix": "$bsbadgecollection",
         "body": [
-            "<span class='badge bg-primary'>Primary</span>",
-            "<span class='badge bg-secondary'>Secondary</span>",
-            "<span class='badge bg-success'>Success</span>",
-            "<span class='badge bg-danger'>Danger</span>",
-            "<span class='badge bg-warning text-dark'>Warning</span>",
-            "<span class='badge bg-info text-dark'>Info</span>",
-            "<span class='badge bg-light text-dark'>Light</span>",
-            "<span class='badge bg-dark'>Dark</span>"
+            "<span class=\"badge bg-primary\">Primary</span>",
+            "<span class=\"badge bg-secondary\">Secondary</span>",
+            "<span class=\"badge bg-success\">Success</span>",
+            "<span class=\"badge bg-danger\">Danger</span>",
+            "<span class=\"badge bg-warning text-dark\">Warning</span>",
+            "<span class=\"badge bg-info text-dark\">Info</span>",
+            "<span class=\"badge bg-light text-dark\">Light</span>",
+            "<span class=\"badge bg-dark\">Dark</span>"
         ],
         "description": "Bootstrap badge"
     },
     "Bootstrap Navbar": {
         "prefix": "$bsnavbar",
         "body": [
-            "<nav class='navbar navbar-expand-lg navbar-light bg-light'>",
-            "    <div class='container-fluid'>",
-            "        <a class='navbar-brand' href='#'>Navbar</a>",
-            "        <button class='navbar-toggler' type='button' data-bs-toggle='collapse' data-bs-target='#navbarNav' aria-controls='navbarNav' aria-expanded='false' aria-label='Toggle navigation'>",
-            "            <span class='navbar-toggler-icon'></span>",
+            "<nav class=\"navbar navbar-expand-lg navbar-light bg-light\">",
+            "    <div class=\"container-fluid\">",
+            "        <a class=\"navbar-brand\" href=\"\">Navbar</a>",
+            "        <button class=\"navbar-toggler\" type=\"button\" data-bs-toggle=\"collapse\" data-bs-target=\"#navbarNav\" aria-controls=\"navbarNav\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">",
+            "            <span class=\"navbar-toggler-icon\"></span>",
             "        </button>",
-            "        <div class='collapse navbar-collapse' id='navbarNav'>",
-            "            <ul class='navbar-nav'>",
-            "                <li class='nav-item'>",
-            "                    <a class='nav-link active' aria-current='page' href='#'>Home</a>",
+            "        <div class=\"collapse navbar-collapse\" id=\"navbarNav\">",
+            "            <ul class=\"navbar-nav\">",
+            "                <li class=\"nav-item\">",
+            "                    <a class=\"nav-link active\" aria-current=\"page\" href=\"\">Home</a>",
             "                </li>",
-            "                <li class='nav-item'>",
-            "                    <a class='nav-link' href='#'>Features</a>",
+            "                <li class=\"nav-item\">",
+            "                    <a class=\"nav-link\" href=\"\">Features</a>",
             "                </li>",
-            "                <li class='nav-item'>",
-            "                    <a class='nav-link' href='#'>Pricing</a>",
+            "                <li class=\"nav-item\">",
+            "                    <a class=\"nav-link\" href=\"\">Pricing</a>",
             "                </li>",
-            "                <li class='nav-item'>",
-            "                    <a class='nav-link disabled' href='#' tabindex='-1' aria-disabled='true'>Disabled</a>",
+            "                <li class=\"nav-item\">",
+            "                    <a class=\"nav-link disabled\" href=\"\" tabindex=\"-1\" aria-disabled=\"true\">Disabled</a>",
             "                </li>",
             "            </ul>",
             "        </div>",
@@ -689,14 +719,14 @@
     "Bootstrap dropdown": {
         "prefix": "$bsdropdown",
         "body": [
-            "<div class='dropdown'>",
-            "    <button class='btn btn-secondary dropdown-toggle' type='button' id='dropdownMenuButton' data-bs-toggle='dropdown' aria-expanded='false'>",
+            "<div class=\"dropdown\">",
+            "    <button class=\"btn btn-secondary dropdown-toggle\" type=\"button\" id=\"dropdownMenuButton\" data-bs-toggle=\"dropdown\" aria-expanded=\"false\">",
             "        Dropdown button",
             "    </button>",
-            "    <ul class='dropdown-menu' aria-labelledby='dropdownMenuButton'>",
-            "        <li><a class='dropdown-item' href='#'>Action</a></li>",
-            "        <li><a class='dropdown-item' href='#'>Another action</a></li>",
-            "        <li><a class='dropdown-item' href='#'>Something else here</a></li>",
+            "    <ul class=\"dropdown-menu\" aria-labelledby=\"dropdownMenuButton\">",
+            "        <li><a class=\"dropdown-item\" href=\"\">Action</a></li>",
+            "        <li><a class=\"dropdown-item\" href=\"\">Another action</a></li>",
+            "        <li><a class=\"dropdown-item\" href=\"\">Something else here</a></li>",
             "    </ul>",
             "</div>"
         ],
@@ -707,37 +737,37 @@
         "prefix": "$mdb5",
         "body": [
             "<!DOCTYPE html>",
-            "<html lang='en'>",
+            "<html lang=\"en\">",
             "<head>",
-            "    <meta charset='UTF-8' />",
-            "    <meta name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no' />",
-            "    <meta http-equiv='x-ua-compatible' content='ie=edge' />",
+            "    <meta charset=\"UTF-8\" />",
+            "    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1, shrink-to-fit=no\" />",
+            "    <meta http-equiv=\"x-ua-compatible\" content=\"ie=edge\" />",
             "    <title>Material Design for Bootstrap</title>",
             "    <$-- MDB icon -->",
-            "    <link rel='icon' href='img/mdb-favicon.ico' type='image/x-icon' />",
+            "    <link rel=\"icon\" href=\"img/mdb-favicon.ico\" type=\"image/x-icon\" />",
             "    <$-- Font Awesome -->",
-            "    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css' />",
+            "    <link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css\" />",
             "    <$-- Google Fonts Roboto -->",
-            "    <link rel='stylesheet'",
-            "        href='https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap' /><$-- MDB -->",
-            "    <link href='https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/8.2.0/mdb.min.css' rel='stylesheet' />",
+            "    <link rel=\"stylesheet\"",
+            "        href=\"https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap\" /><$-- MDB -->",
+            "    <link href=\"https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/8.2.0/mdb.min.css\" rel=\"stylesheet\" />",
             "</head>",
             "<body>",
             "    <$-- Start your project here-->",
-            "    <div class='container'>",
-            "        <div class='d-flex justify-content-center align-items-center' style='height: 100vh'>",
-            "            <div class='text-center'>",
-            "                <img class='mb-4' src='https://phppoint.in/assets/images/phppoint.png' style='width: 250px;' />",
-            "                <h5 class='mb-3'>Thank you for using our product. We're glad you're with us.</h5>",
+            "    <div class=\"container\">",
+            "        <div class=\"d-flex justify-content-center align-items-center\" style=\"height: 100vh\">",
+            "            <div class=\"text-center\">",
+            "                <img class=\"mb-4\" src=\"https://phppoint.in/assets/images/phppoint.png\" style=\"width: 250px;\" />",
+            "                <h5 class=\"mb-3\">Thank you for using our product. We\"re glad you\"re with us.</h5>",
             "            </div>",
             "        </div>",
             "    </div>",
             "    <$-- End your project here-->",
             "    <$-- MDB -->",
-            "    <script type='text/javascript'",
-            "        src='https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/8.2.0/mdb.umd.min.js'></script>",
+            "    <script type=\"text/javascript\"",
+            "        src=\"https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/8.2.0/mdb.umd.min.js\"></script>",
             "    <$-- Custom scripts -->",
-            "    <script type='text/javascript'></script>",
+            "    <script type=\"text/javascript\"></script>",
             "</body>",
             "</html>",
         ],
@@ -746,12 +776,12 @@
     "Basic MDB card": {
         "prefix": "$MDBcard",
         "body": [
-            "<div class='card' style='width: 18rem;'>",
-            "    <img src='image.jpg' class='card-img-top' alt='...'>",
-            "    <div class='card-body'>",
-            "        <h5 class='card-title'>Card title</h5>",
-            "        <p class='card-text'>Some quick example text to build on the card title and make up the bulk of the card's content.</p>",
-            "        <a href='#' class='btn btn-primary'>Go somewhere</a>",
+            "<div class=\"card\" style=\"width: 18rem;\">",
+            "    <img src=\"image.jpg\" class=\"card-img-top\" alt=\"...\">",
+            "    <div class=\"card-body\">",
+            "        <h5 class=\"card-title\">Card title</h5>",
+            "        <p class=\"card-text\">Some quick example text to build on the card title and make up the bulk of the card\"s content.</p>",
+            "        <a href=\"\" class=\"btn btn-primary\">Go somewhere</a>",
             "    </div>",
             "</div>"
         ],
@@ -761,20 +791,20 @@
         "prefix": "$MDBform",
         "body": [
             "<form>",
-            "    <div class='form-group'>",
-            "        <label for='exampleInputEmail1'>Email address</label>",
-            "        <input type='email' class='form-control' id='exampleInputEmail1' aria-describedby='emailHelp'>",
-            "        <small id='emailHelp' class='form-text text-muted'>We'll never share your email with anyone else.</small>",
+            "    <div class=\"form-group\">",
+            "        <label for=\"exampleInputEmail1\">Email address</label>",
+            "        <input type=\"email\" class=\"form-control\" id=\"exampleInputEmail1\" aria-describedby=\"emailHelp\">",
+            "        <small id=\"emailHelp\" class=\"form-text text-muted\">We\"ll never share your email with anyone else.</small>",
             "    </div>",
-            "    <div class='form-group'>",
-            "        <label for='exampleInputPassword1'>Password</label>",
-            "        <input type='password' class='form-control' id='exampleInputPassword1'>",
+            "    <div class=\"form-group\">",
+            "        <label for=\"exampleInputPassword1\">Password</label>",
+            "        <input type=\"password\" class=\"form-control\" id=\"exampleInputPassword1\">",
             "    </div>",
-            "    <div class='form-check'>",
-            "        <input type='checkbox' class='form-check-input' id='exampleCheck1'>",
-            "        <label class='form-check-label' for='exampleCheck1'>Check me out</label>",
+            "    <div class=\"form-check\">",
+            "        <input type=\"checkbox\" class=\"form-check-input\" id=\"exampleCheck1\">",
+            "        <label class=\"form-check-label\" for=\"exampleCheck1\">Check me out</label>",
             "    </div>",
-            "    <button type='submit' class='btn btn-primary'>Submit</button>",
+            "    <button type=\"submit\" class=\"btn btn-primary\">Submit</button>",
             "</form>"
         ],
         "description": "Basic MDB form"
@@ -782,45 +812,45 @@
     "Basic MDB button": {
         "prefix": "$MDBbutton",
         "body": [
-            "<button type='button' class='btn btn-primary'>Primary</button>",
-            "<button type='button' class='btn btn-secondary'>Secondary</button>",
-            "<button type='button' class='btn btn-success'>Success</button>",
-            "<button type='button' class='btn btn-danger'>Danger</button>",
-            "<button type='button' class='btn btn-warning'>Warning</button>",
-            "<button type='button' class='btn btn-info'>Info</button>",
-            "<button type='button' class='btn btn-light'>Light</button>",
-            "<button type='button' class='btn btn-dark'>Dark</button>",
-            "<button type='button' class='btn btn-link'>Link</button>"
+            "<button type=\"button\" class=\"btn btn-primary\">Primary</button>",
+            "<button type=\"button\" class=\"btn btn-secondary\">Secondary</button>",
+            "<button type=\"button\" class=\"btn btn-success\">Success</button>",
+            "<button type=\"button\" class=\"btn btn-danger\">Danger</button>",
+            "<button type=\"button\" class=\"btn btn-warning\">Warning</button>",
+            "<button type=\"button\" class=\"btn btn-info\">Info</button>",
+            "<button type=\"button\" class=\"btn btn-light\">Light</button>",
+            "<button type=\"button\" class=\"btn btn-dark\">Dark</button>",
+            "<button type=\"button\" class=\"btn btn-link\">Link</button>"
         ],
         "description": "Basic MDB button"
     },
     "Basic MDB link": {
         "prefix": "$MDBlink",
         "body": [
-            "<a href='#' class='btn btn-primary'>Primary</a>",
-            "<a href='#' class='btn btn-secondary'>Secondary</a>",
-            "<a href='#' class='btn btn-success'>Success</a>",
-            "<a href='#' class='btn btn-danger'>Danger</a>",
-            "<a href='#' class='btn btn-warning'>Warning</a>",
-            "<a href='#' class='btn btn-info'>Info</a>",
-            "<a href='#' class='btn btn-light'>Light</a>",
-            "<a href='#' class='btn btn-dark'>Dark</a>",
-            "<a href='#' class='btn btn-link'>Link</a>"
+            "<a href=\"\" class=\"btn btn-primary\">Primary</a>",
+            "<a href=\"\" class=\"btn btn-secondary\">Secondary</a>",
+            "<a href=\"\" class=\"btn btn-success\">Success</a>",
+            "<a href=\"\" class=\"btn btn-danger\">Danger</a>",
+            "<a href=\"\" class=\"btn btn-warning\">Warning</a>",
+            "<a href=\"\" class=\"btn btn-info\">Info</a>",
+            "<a href=\"\" class=\"btn btn-light\">Light</a>",
+            "<a href=\"\" class=\"btn btn-dark\">Dark</a>",
+            "<a href=\"\" class=\"btn btn-link\">Link</a>"
         ],
         "description": "Basic MDB link"
     },
     "Basic MDB image": {
         "prefix": "$MDBimg",
         "body": [
-            "<img src='image.jpg' class='img-fluid' alt='Responsive image'>"
+            "<img src=\"image.jpg\" class=\"img-fluid\" alt=\"Responsive image\">"
         ],
         "description": "Basic MDB image"
     },
     "Basic MDB video": {
         "prefix": "$MDBvideo",
         "body": [
-            "<video class='img-fluid' controls>",
-            "    <source src='movie.mp4' type='video/mp4'>",
+            "<video class=\"img-fluid\" controls>",
+            "    <source src=\"movie.mp4\" type=\"video/mp4\">",
             "    Your browser does not support the video tag.",
             "</video>"
         ],
@@ -829,8 +859,8 @@
     "Basic MDB audio": {
         "prefix": "$MDBaudio",
         "body": [
-            "<audio class='img-fluid' controls>",
-            "    <source src='audio.mp3' type='audio/mpeg'>",
+            "<audio class=\"img-fluid\" controls>",
+            "    <source src=\"audio.mp3\" type=\"audio/mpeg\">",
             "    Your browser does not support the audio tag.",
             "</audio>"
         ],
@@ -839,32 +869,32 @@
     "Basic MDB iframe": {
         "prefix": "$MDBiframe",
         "body": [
-            "<iframe src='https://www.example.com' width='600' height='400'></iframe>"
+            "<iframe src=\"https://www.example.com\" width=\"600\" height=\"400\"></iframe>"
         ],
         "description": "Basic MDB iframe"
     },
     "Basic MDB carousel": {
         "prefix": "$MDBcarousel",
         "body": [
-            "<div id='carouselExampleControls' class='carousel slide' data-mdb-ride='carousel'>",
-            "    <div class='carousel-inner'>",
-            "        <div class='carousel-item active'>",
-            "            <img src='image1.jpg' class='d-block w-100' alt='...'>",
+            "<div id=\"carouselExampleControls\" class=\"carousel slide\" data-mdb-ride=\"carousel\">",
+            "    <div class=\"carousel-inner\">",
+            "        <div class=\"carousel-item active\">",
+            "            <img src=\"image1.jpg\" class=\"d-block w-100\" alt=\"...\">",
             "        </div>",
-            "        <div class='carousel-item'>",
-            "            <img src='image2.jpg' class='d-block w-100' alt='...'>",
+            "        <div class=\"carousel-item\">",
+            "            <img src=\"image2.jpg\" class=\"d-block w-100\" alt=\"...\">",
             "        </div>",
-            "        <div class='carousel-item'>",
-            "            <img src='image3.jpg' class='d-block w-100' alt='...'>",
+            "        <div class=\"carousel-item\">",
+            "            <img src=\"image3.jpg\" class=\"d-block w-100\" alt=\"...\">",
             "        </div>",
             "    </div>",
-            "    <button class='carousel-control-prev' type='button' data-mdb-target='#carouselExampleControls' data-mdb-slide='prev'>",
-            "        <span class='carousel-control-prev-icon' aria-hidden='true'></span>",
-            "        <span class='visually-hidden'>Previous</span>",
+            "    <button class=\"carousel-control-prev\" type=\"button\" data-mdb-target=\"#carouselExampleControls\" data-mdb-slide=\"prev\">",
+            "        <span class=\"carousel-control-prev-icon\" aria-hidden=\"true\"></span>",
+            "        <span class=\"visually-hidden\">Previous</span>",
             "    </button>",
-            "    <button class='carousel-control-next' type='button' data-mdb-target='#carouselExampleControls' data-mdb-slide='next'>",
-            "        <span class='carousel-control-next-icon' aria-hidden='true'></span>",
-            "        <span class='visually-hidden'>Next</span>",
+            "    <button class=\"carousel-control-next\" type=\"button\" data-mdb-target=\"#carouselExampleControls\" data-mdb-slide=\"next\">",
+            "        <span class=\"carousel-control-next-icon\" aria-hidden=\"true\"></span>",
+            "        <span class=\"visually-hidden\">Next</span>",
             "    </button>",
             "</div>"
         ],
@@ -873,28 +903,28 @@
     "Basic MDB accordion": {
         "prefix": "$MDBaccordion",
         "body": [
-            "<div class='accordion' id='accordionExample'>",
-            "    <div class='accordion-item'>",
-            "        <h2 class='accordion-header' id='headingOne'>",
-            "            <button class='accordion-button' type='button' data-mdb-toggle='collapse' data-mdb-target='#collapseOne' aria-expanded='true' aria-controls='collapseOne'>",
+            "<div class=\"accordion\" id=\"accordionExample\">",
+            "    <div class=\"accordion-item\">",
+            "        <h2 class=\"accordion-header\" id=\"headingOne\">",
+            "            <button class=\"accordion-button\" type=\"button\" data-mdb-toggle=\"collapse\" data-mdb-target=\"#collapseOne\" aria-expanded=\"true\" aria-controls=\"collapseOne\">",
             "                Accordion Item #1",
             "            </button>",
             "        </h2>",
-            "        <div id='collapseOne' class='accordion-collapse collapse show' aria-labelledby='headingOne' data-mdb-parent='#accordionExample'>",
-            "            <div class='accordion-body'>",
-            "                <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element.",
+            "        <div id=\"collapseOne\" class=\"accordion-collapse collapse show\" aria-labelledby=\"headingOne\" data-mdb-parent=\"#accordionExample\">",
+            "            <div class=\"accordion-body\">",
+            "                <strong>This is the first item\"s accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element.",
             "            </div>",
             "        </div>",
             "    </div>",
-            "    <div class='accordion-item'>",
-            "        <h2 class='accordion-header' id='headingTwo'>",
-            "            <button class='accordion-button collapsed' type='button' data-mdb-toggle='collapse' data-mdb-target='#collapseTwo' aria-expanded='false' aria-controls='collapseTwo'>",
+            "    <div class=\"accordion-item\">",
+            "        <h2 class=\"accordion-header\" id=\"headingTwo\">",
+            "            <button class=\"accordion-button collapsed\" type=\"button\" data-mdb-toggle=\"collapse\" data-mdb-target=\"#collapseTwo\" aria-expanded=\"false\" aria-controls=\"collapseTwo\">",
             "                Accordion Item #2",
             "            </button>",
             "        </h2>",
-            "        <div id='collapseTwo' class='accordion-collapse collapse' aria-labelledby='headingTwo' data-mdb-parent='#accordionExample'>",
-            "            <div class='accordion-body'>",
-            "                <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element.",
+            "        <div id=\"collapseTwo\" class=\"accordion-collapse collapse\" aria-labelledby=\"headingTwo\" data-mdb-parent=\"#accordionExample\">",
+            "            <div class=\"accordion-body\">",
+            "                <strong>This is the second item\"s accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element.",
             "            </div>",
             "        </div>",
             "    </div>",
@@ -905,28 +935,28 @@
     "Basic MDB alert": {
         "prefix": "$MDBalert",
         "body": [
-            "<div class='alert alert-primary' role='alert'>",
+            "<div class=\"alert alert-primary\" role=\"alert\">",
             "    A simple primary alert—check it out$",
             "</div>",
-            "<div class='alert alert-secondary' role='alert'>",
+            "<div class=\"alert alert-secondary\" role=\"alert\">",
             "    A simple secondary alert—check it out$",
             "</div>",
-            "<div class='alert alert-success' role='alert'>",
+            "<div class=\"alert alert-success\" role=\"alert\">",
             "    A simple success alert—check it out$",
             "</div>",
-            "<div class='alert alert-danger' role='alert'>",
+            "<div class=\"alert alert-danger\" role=\"alert\">",
             "    A simple danger alert—check it out$",
             "</div>",
-            "<div class='alert alert-warning' role='alert'>",
+            "<div class=\"alert alert-warning\" role=\"alert\">",
             "    A simple warning alert—check it out$",
             "</div>",
-            "<div class='alert alert-info' role='alert'>",
+            "<div class=\"alert alert-info\" role=\"alert\">",
             "    A simple info alert—check it out$",
             "</div>",
-            "<div class='alert alert-light' role='alert'>",
+            "<div class=\"alert alert-light\" role=\"alert\">",
             "    A simple light alert—check it out$",
             "</div>",
-            "<div class='alert alert-dark' role='alert'>",
+            "<div class=\"alert alert-dark\" role=\"alert\">",
             "    A simple dark alert—check it out$",
             "</div>"
         ],
@@ -935,39 +965,39 @@
     "Basic MDB badge": {
         "prefix": "$MDBbadgecollection",
         "body": [
-            "<span class='badge bg-primary'>Primary</span>",
-            "<span class='badge bg-secondary'>Secondary</span>",
-            "<span class='badge bg-success'>Success</span>",
-            "<span class='badge bg-danger'>Danger</span>",
-            "<span class='badge bg-warning text-dark'>Warning</span>",
-            "<span class='badge bg-info text-dark'>Info</span>",
-            "<span class='badge bg-light text-dark'>Light</span>",
-            "<span class='badge bg-dark'>Dark</span>"
+            "<span class=\"badge bg-primary\">Primary</span>",
+            "<span class=\"badge bg-secondary\">Secondary</span>",
+            "<span class=\"badge bg-success\">Success</span>",
+            "<span class=\"badge bg-danger\">Danger</span>",
+            "<span class=\"badge bg-warning text-dark\">Warning</span>",
+            "<span class=\"badge bg-info text-dark\">Info</span>",
+            "<span class=\"badge bg-light text-dark\">Light</span>",
+            "<span class=\"badge bg-dark\">Dark</span>"
         ],
         "description": "Basic MDB badge"
     },
     "Basic MDB Navbar": {
         "prefix": "$MDBnavbar",
         "body": [
-            "<nav class='navbar navbar-expand-lg navbar-light bg-light'>",
-            "    <div class='container-fluid'>",
-            "        <a class='navbar-brand' href='#'>Navbar</a>",
-            "        <button class='navbar-toggler' type='button' data-mdb-toggle='collapse' data-mdb-target='#navbarNav' aria-controls='navbarNav' aria-expanded='false' aria-label='Toggle navigation'>",
-            "            <span class='navbar-toggler-icon'></span>",
+            "<nav class=\"navbar navbar-expand-lg navbar-light bg-light\">",
+            "    <div class=\"container-fluid\">",
+            "        <a class=\"navbar-brand\" href=\"\">Navbar</a>",
+            "        <button class=\"navbar-toggler\" type=\"button\" data-mdb-toggle=\"collapse\" data-mdb-target=\"#navbarNav\" aria-controls=\"navbarNav\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">",
+            "            <span class=\"navbar-toggler-icon\"></span>",
             "        </button>",
-            "        <div class='collapse navbar-collapse' id='navbarNav'>",
-            "            <ul class='navbar-nav'>",
-            "                <li class='nav-item'>",
-            "                    <a class='nav-link active' aria-current='page' href='#'>Home</a>",
+            "        <div class=\"collapse navbar-collapse\" id=\"navbarNav\">",
+            "            <ul class=\"navbar-nav\">",
+            "                <li class=\"nav-item\">",
+            "                    <a class=\"nav-link active\" aria-current=\"page\" href=\"\">Home</a>",
             "                </li>",
-            "                <li class='nav-item'>",
-            "                    <a class='nav-link' href='#'>Features</a>",
+            "                <li class=\"nav-item\">",
+            "                    <a class=\"nav-link\" href=\"\">Features</a>",
             "                </li>",
-            "                <li class='nav-item'>",
-            "                    <a class='nav-link' href='#'>Pricing</a>",
+            "                <li class=\"nav-item\">",
+            "                    <a class=\"nav-link\" href=\"\">Pricing</a>",
             "                </li>",
-            "                <li class='nav-item'>",
-            "                    <a class='nav-link disabled' href='#' tabindex='-1' aria-disabled='true'>Disabled</a>",
+            "                <li class=\"nav-item\">",
+            "                    <a class=\"nav-link disabled\" href=\"\" tabindex=\"-1\" aria-disabled=\"true\">Disabled</a>",
             "                </li>",
             "            </ul>",
             "        </div>",
@@ -979,14 +1009,14 @@
     "Basic MDB dropdown": {
         "prefix": "$MDBdropdown",
         "body": [
-            "<div class='dropdown'>",
-            "    <button class='btn btn-secondary dropdown-toggle' type='button' id='dropdownMenuButton' data-mdb-toggle='dropdown' aria-expanded='false'>",
+            "<div class=\"dropdown\">",
+            "    <button class=\"btn btn-secondary dropdown-toggle\" type=\"button\" id=\"dropdownMenuButton\" data-mdb-toggle=\"dropdown\" aria-expanded=\"false\">",
             "        Dropdown button",
             "    </button>",
-            "    <ul class='dropdown-menu' aria-labelledby='dropdownMenuButton'>",
-            "        <li><a class='dropdown-item' href='#'>Action</a></li>",
-            "        <li><a class='dropdown-item' href='#'>Another action</a></li>",
-            "        <li><a class='dropdown-item' href='#'>Something else here</a></li>",
+            "    <ul class=\"dropdown-menu\" aria-labelledby=\"dropdownMenuButton\">",
+            "        <li><a class=\"dropdown-item\" href=\"\">Action</a></li>",
+            "        <li><a class=\"dropdown-item\" href=\"\">Another action</a></li>",
+            "        <li><a class=\"dropdown-item\" href=\"\">Something else here</a></li>",
             "    </ul>",
             "</div>"
         ],
@@ -995,22 +1025,22 @@
     "Basic MDB modal": {
         "prefix": "$MDBmodal",
         "body": [
-            "<button type='button' class='btn btn-primary' data-mdb-toggle='modal' data-mdb-target='#exampleModal'>",
+            "<button type=\"button\" class=\"btn btn-primary\" data-mdb-toggle=\"modal\" data-mdb-target=\"#exampleModal\">",
             "    Launch demo modal",
             "</button>",
-            "<div class='modal fade' id='exampleModal' tabindex='-1' aria-labelledby='exampleModalLabel' aria-hidden='true'>",
-            "    <div class='modal-dialog'>",
-            "        <div class='modal-content'>",
-            "            <div class='modal-header'>",
-            "                <h5 class='modal-title' id='exampleModalLabel'>Modal title</h5>",
-            "                <button type='button' class='btn-close' data-mdb-dismiss='modal' aria-label='Close'></button>",
+            "<div class=\"modal fade\" id=\"exampleModal\" tabindex=\"-1\" aria-labelledby=\"exampleModalLabel\" aria-hidden=\"true\">",
+            "    <div class=\"modal-dialog\">",
+            "        <div class=\"modal-content\">",
+            "            <div class=\"modal-header\">",
+            "                <h5 class=\"modal-title\" id=\"exampleModalLabel\">Modal title</h5>",
+            "                <button type=\"button\" class=\"btn-close\" data-mdb-dismiss=\"modal\" aria-label=\"Close\"></button>",
             "            </div>",
-            "            <div class='modal-body'>",
+            "            <div class=\"modal-body\">",
             "                ...",
             "            </div>",
-            "            <div class='modal-footer'>",
-            "                <button type='button' class='btn btn-secondary' data-mdb-dismiss='modal'>Close</button>",
-            "                <button type='button' class='btn btn-primary'>Save changes</button>",
+            "            <div class=\"modal-footer\">",
+            "                <button type=\"button\" class=\"btn btn-secondary\" data-mdb-dismiss=\"modal\">Close</button>",
+            "                <button type=\"button\" class=\"btn btn-primary\">Save changes</button>",
             "            </div>",
             "        </div>",
             "    </div>",
@@ -1021,14 +1051,14 @@
     "Basic MDB toast": {
         "prefix": "$MDBtoast",
         "body": [
-            "<div class='toast' role='alert' aria-live='assertive' aria-atomic='true'>",
-            "    <div class='toast-header'>",
-            "        <img src='...' class='rounded me' alt='...'>",
-            "        <strong class='me-auto'>Bootstrap</strong>",
+            "<div class=\"toast\" role=\"alert\" aria-live=\"assertive\" aria-atomic=\"true\">",
+            "    <div class=\"toast-header\">",
+            "        <img src=\"...\" class=\"rounded me\" alt=\"...\">",
+            "        <strong class=\"me-auto\">Bootstrap</strong>",
             "        <small>11 mins ago</small>",
-            "        <button type='button' class='btn-close' data-mdb-dismiss='toast' aria-label='Close'></button>",
+            "        <button type=\"button\" class=\"btn-close\" data-mdb-dismiss=\"toast\" aria-label=\"Close\"></button>",
             "    </div>",
-            "    <div class='toast-body'>",
+            "    <div class=\"toast-body\">",
             "        Hello, world$ This is a toast message.",
             "    </div>",
             "</div>"
@@ -1038,32 +1068,32 @@
     "Basic MDB spinner": {
         "prefix": "$MDBspinner",
         "body": [
-            "<div class='spinner-border' role='status'>",
-            "    <span class='visually-hidden'>Loading...</span>",
+            "<div class=\"spinner-border\" role=\"status\">",
+            "    <span class=\"visually-hidden\">Loading...</span>",
             "</div>",
-            "<div class='spinner-border text-primary' role='status'>",
-            "    <span class='visually-hidden'>Loading...</span>",
+            "<div class=\"spinner-border text-primary\" role=\"status\">",
+            "    <span class=\"visually-hidden\">Loading...</span>",
             "</div>",
-            "<div class='spinner-border text-secondary' role='status'>",
-            "    <span class='visually-hidden'>Loading...</span>",
+            "<div class=\"spinner-border text-secondary\" role=\"status\">",
+            "    <span class=\"visually-hidden\">Loading...</span>",
             "</div>",
-            "<div class='spinner-border text-success' role='status'>",
-            "    <span class='visually-hidden'>Loading...</span>",
+            "<div class=\"spinner-border text-success\" role=\"status\">",
+            "    <span class=\"visually-hidden\">Loading...</span>",
             "</div>",
-            "<div class='spinner-border text-danger' role='status'>",
-            "    <span class='visually-hidden'>Loading...</span>",
+            "<div class=\"spinner-border text-danger\" role=\"status\">",
+            "    <span class=\"visually-hidden\">Loading...</span>",
             "</div>",
-            "<div class='spinner-border text-warning' role='status'>",
-            "    <span class='visually-hidden'>Loading...</span>",
+            "<div class=\"spinner-border text-warning\" role=\"status\">",
+            "    <span class=\"visually-hidden\">Loading...</span>",
             "</div>",
-            "<div class='spinner-border text-info' role='status'>",
-            "    <span class='visually-hidden'>Loading...</span>",
+            "<div class=\"spinner-border text-info\" role=\"status\">",
+            "    <span class=\"visually-hidden\">Loading...</span>",
             "</div>",
-            "<div class='spinner-border text-light' role='status'>",
-            "    <span class='visually-hidden'>Loading...</span>",
+            "<div class=\"spinner-border text-light\" role=\"status\">",
+            "    <span class=\"visually-hidden\">Loading...</span>",
             "</div>",
-            "<div class='spinner-border text-dark' role='status'>",
-            "    <span class='visually-hidden'>Loading...</span>",
+            "<div class=\"spinner-border text-dark\" role=\"status\">",
+            "    <span class=\"visually-hidden\">Loading...</span>",
             "</div>"
         ],
         "description": "Basic MDB spinner"
@@ -1071,20 +1101,20 @@
     "Basic MDB progress": {
         "prefix": "$MDBprogress",
         "body": [
-            "<div class='progress'>",
-            "    <div class='progress-bar' role='progressbar' style='width: 25%' aria-valuenow='25' aria-valuemin='0' aria-valuemax='100'></div>",
+            "<div class=\"progress\">",
+            "    <div class=\"progress-bar\" role=\"progressbar\" style=\"width: 25%\" aria-valuenow=\"25\" aria-valuemin=\"0\" aria-valuemax=\"100\"></div>",
             "</div>",
-            "<div class='progress'>",
-            "    <div class='progress-bar' role='progressbar' style='width: 25%' aria-valuenow='25' aria-valuemin='0' aria-valuemax='100'>25%</div>",
+            "<div class=\"progress\">",
+            "    <div class=\"progress-bar\" role=\"progressbar\" style=\"width: 25%\" aria-valuenow=\"25\" aria-valuemin=\"0\" aria-valuemax=\"100\">25%</div>",
             "</div>",
-            "<div class='progress'>",
-            "    <div class='progress-bar' role='progressbar' style='width: 50%' aria-valuenow='50' aria-valuemin='0' aria-valuemax='100'>50%</div>",
+            "<div class=\"progress\">",
+            "    <div class=\"progress-bar\" role=\"progressbar\" style=\"width: 50%\" aria-valuenow=\"50\" aria-valuemin=\"0\" aria-valuemax=\"100\">50%</div>",
             "</div>",
-            "<div class='progress'>",
-            "    <div class='progress-bar' role='progressbar' style='width: 75%' aria-valuenow='75' aria-valuemin='0' aria-valuemax='100'>75%</div>",
+            "<div class=\"progress\">",
+            "    <div class=\"progress-bar\" role=\"progressbar\" style=\"width: 75%\" aria-valuenow=\"75\" aria-valuemin=\"0\" aria-valuemax=\"100\">75%</div>",
             "</div>",
-            "<div class='progress'>",
-            "    <div class='progress-bar' role='progressbar' style='width: 100%' aria-valuenow='100' aria-valuemin='0' aria-valuemax='100'>100%</div>",
+            "<div class=\"progress\">",
+            "    <div class=\"progress-bar\" role=\"progressbar\" style=\"width: 100%\" aria-valuenow=\"100\" aria-valuemin=\"0\" aria-valuemax=\"100\">100%</div>",
             "</div>"
         ],
         "description": "Basic MDB progress"
@@ -1093,12 +1123,12 @@
         "prefix": "$MDBpagination",
         "body": [
             "<nav>",
-            "    <ul class='pagination'>",
-            "        <li class='page-item'><a class='page-link' href='#'>Previous</a></li>",
-            "        <li class='page-item'><a class='page-link' href='#'>1</a></li>",
-            "        <li class='page-item'><a class='page-link' href='#'>2</a></li>",
-            "        <li class='page-item'><a class='page-link' href='#'>3</a></li>",
-            "        <li class='page-item'><a class='page-link' href='#'>Next</a></li>",
+            "    <ul class=\"pagination\">",
+            "        <li class=\"page-item\"><a class=\"page-link\" href=\"\">Previous</a></li>",
+            "        <li class=\"page-item\"><a class=\"page-link\" href=\"\">1</a></li>",
+            "        <li class=\"page-item\"><a class=\"page-link\" href=\"\">2</a></li>",
+            "        <li class=\"page-item\"><a class=\"page-link\" href=\"\">3</a></li>",
+            "        <li class=\"page-item\"><a class=\"page-link\" href=\"\">Next</a></li>",
             "    </ul>",
             "</nav>"
         ],

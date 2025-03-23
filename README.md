@@ -16,11 +16,11 @@ This is a VS Code extension that helps developers with basic html code fast writ
 ![Screenshot](screenshots/2.png)
 
 ## How to Use
-- Open VS Code.
-- Install and Activate the extension.
-- To use HTML, type $bhtml,for table $btable ,for form $bform ,for button $bbutton and etc.
-- bootstrap 5 $bs5,$bstable,$bsform etc. and for mdbbootstrap 5 $mdb5,$mdtable,$mdbform etc.
-- Enjoy the features.
+* Open VS Code.
+* Install and Activate the extension.
+* To use HTML, type $bhtml,for table $btable ,for form $bform ,for button $bbutton and etc.
+* bootstrap 5 $bs5,$bstable,$bsform etc. and for mdbbootstrap 5 $mdb5,$mdtable,$mdbform etc.
+* Enjoy the features.
 
 ## Release Notes
 ### v0.0.7
